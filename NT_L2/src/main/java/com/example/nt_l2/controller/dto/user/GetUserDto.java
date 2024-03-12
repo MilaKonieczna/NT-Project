@@ -6,7 +6,7 @@ public class GetUserDto {
     private String password;
     private String role;
     private String email;
-    private String Name;
+    private String name;
 
     public GetUserDto(long id, String username, String password, String role, String email, String name) {
         this.id = id;
@@ -14,7 +14,7 @@ public class GetUserDto {
         this.password = password;
         this.role = role;
         this.email = email;
-        Name = name;
+        this.name = name;
     }
 
     public GetUserDto() {
@@ -61,10 +61,10 @@ public class GetUserDto {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 }

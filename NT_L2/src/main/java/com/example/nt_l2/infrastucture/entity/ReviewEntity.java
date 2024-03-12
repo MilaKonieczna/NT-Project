@@ -13,11 +13,11 @@ public class ReviewEntity {
     private long id;
 
     @ManyToOne
-    @JoinColumn(name = "book_id", referencedColumnName = "id")
+    @JoinColumn(name = "bookId", referencedColumnName = "id")
     private BookEntity bookId;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    @JoinColumn(name = "userId", referencedColumnName = "id")
     private UserEntity userId;
 
     @Basic
@@ -29,7 +29,7 @@ public class ReviewEntity {
     private String comment;
 
     @Basic
-    @Column(name="review_date")
+    @Column(name="reviewDate")
     private Date reviewDate;
 
     public long getId() {

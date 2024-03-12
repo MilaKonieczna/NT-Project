@@ -5,11 +5,12 @@ import jakarta.persistence.*;
 @Table(name = "details", schema = "library")
 public class BookDetailEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "bookId")
     private long id;
 
     @OneToOne
-    @JoinColumn(name = "book_id", referencedColumnName = "id")
+    @MapsId
+    @JoinColumn(name = "bookId")
     private BookEntity bookId;
 
     @Column(name = "genre")

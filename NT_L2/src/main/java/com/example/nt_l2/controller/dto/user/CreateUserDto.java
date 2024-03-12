@@ -5,14 +5,14 @@ public class CreateUserDto {
         private String password;
         private String role;
         private String email;
-        private String Name;
+        private String name;
 
         public CreateUserDto(String username, String password, String role, String email, String name) {
             this.username = username;
             this.password = password;
             this.role = role;
             this.email = email;
-            Name = name;
+            this.name = name;
         }
 
         public CreateUserDto() {
@@ -51,11 +51,11 @@ public class CreateUserDto {
         }
 
         public String getName() {
-            return Name;
+            return name;
         }
 
         public void setName(String name) {
-            Name = name;
+            this.name = name;
         }
 
 }

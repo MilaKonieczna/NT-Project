@@ -24,11 +24,11 @@ public class BookEntity {
     @Column(name="publisher")
     private String publisher;
     @Basic
-    @Column(name="publication_year")
+    @Column(name="publicationYear")
     private int publicationYear;
 
     @Basic
-    @Column(name="available_copies")
+    @Column(name="availableCopies")
     private int availableCopies;
 
     public long getId() {

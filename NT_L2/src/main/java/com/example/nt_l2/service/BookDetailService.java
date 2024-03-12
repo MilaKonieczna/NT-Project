@@ -28,7 +28,7 @@ public class BookDetailService {
         return  books.stream().map((book) -> new GetBookDetailDto(book.getId(), book.getBookId(), book.getGenre(), book.getSummary(),book.getCover())).collect(Collectors.toList());
     }
     public GetBookDetailDto getOne(long id){
-        var book = bookDetailRepository.findById(id).orElseThrow(() -> new RuntimeException("Book not found"));
+        var book = bookDetailRepository.findById(id).orElseThrow(() -> new RuntimeException("Book details not found"));
         return new GetBookDetailDto(book.getId(), book.getBookId(), book.getGenre(), book.getSummary(),book.getCover());
     }
     public CreateBookDetailResponseDto create(CreateBookDetailDto book){

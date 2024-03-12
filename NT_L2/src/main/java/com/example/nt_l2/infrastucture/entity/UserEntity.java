@@ -28,8 +28,8 @@ public class UserEntity {
     private String email;
 
     @Basic
-    @Column(name="Name", unique = true)
-    private String Name;
+    @Column(name="name", unique = true)
+    private String name;
 
     public long getId() {
         return id;
@@ -72,10 +72,10 @@ public class UserEntity {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 }

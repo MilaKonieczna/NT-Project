@@ -7,7 +7,7 @@ public class CreateUserResponseDto {
     private String password;
     private String role;
     private String email;
-    private String Name;
+    private String name;
 
     public CreateUserResponseDto(long id, String username, String password, String role, String email, String name) {
         this.id = id;
@@ -15,7 +15,7 @@ public class CreateUserResponseDto {
         this.password = password;
         this.role = role;
         this.email = email;
-        Name = name;
+        this.name = name;
     }
 
     public CreateUserResponseDto() {
@@ -62,10 +62,10 @@ public class CreateUserResponseDto {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 }
